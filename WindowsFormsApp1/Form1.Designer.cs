@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.txtIme = new System.Windows.Forms.TextBox();
+            this.txtIndeks = new System.Windows.Forms.TextBox();
+            this.txtPrezime = new System.Windows.Forms.TextBox();
+            this.btnSpremi = new System.Windows.Forms.Button();
+            this.btnPrikazi = new System.Windows.Forms.Button();
+            this.lstStudenti = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -66,64 +66,67 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Broj indeksa:";
             // 
-            // textBox1
+            // txtIme
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtIme.Location = new System.Drawing.Point(73, 2);
+            this.txtIme.Name = "txtIme";
+            this.txtIme.Size = new System.Drawing.Size(100, 20);
+            this.txtIme.TabIndex = 3;
             // 
-            // textBox2
+            // txtIndeks
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtIndeks.Location = new System.Drawing.Point(98, 138);
+            this.txtIndeks.Name = "txtIndeks";
+            this.txtIndeks.Size = new System.Drawing.Size(100, 20);
+            this.txtIndeks.TabIndex = 4;
             // 
-            // textBox3
+            // txtPrezime
             // 
-            this.textBox3.Location = new System.Drawing.Point(89, 69);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.txtPrezime.Location = new System.Drawing.Point(89, 69);
+            this.txtPrezime.Name = "txtPrezime";
+            this.txtPrezime.Size = new System.Drawing.Size(100, 20);
+            this.txtPrezime.TabIndex = 5;
             // 
-            // button1
+            // btnSpremi
             // 
-            this.button1.Location = new System.Drawing.Point(57, 214);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSpremi.Location = new System.Drawing.Point(17, 191);
+            this.btnSpremi.Name = "btnSpremi";
+            this.btnSpremi.Size = new System.Drawing.Size(75, 23);
+            this.btnSpremi.TabIndex = 6;
+            this.btnSpremi.Text = "Spremi";
+            this.btnSpremi.UseVisualStyleBackColor = true;
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
-            // button2
+            // btnPrikazi
             // 
-            this.button2.Location = new System.Drawing.Point(57, 243);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPrikazi.Location = new System.Drawing.Point(123, 191);
+            this.btnPrikazi.Name = "btnPrikazi";
+            this.btnPrikazi.Size = new System.Drawing.Size(75, 23);
+            this.btnPrikazi.TabIndex = 7;
+            this.btnPrikazi.Text = "Prikazi";
+            this.btnPrikazi.UseVisualStyleBackColor = true;
+            this.btnPrikazi.Click += new System.EventHandler(this.btnPrikazi_Click);
             // 
-            // listBox1
+            // lstStudenti
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(44, 281);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 8;
+            this.lstStudenti.FormattingEnabled = true;
+            this.lstStudenti.Location = new System.Drawing.Point(252, 25);
+            this.lstStudenti.Name = "lstStudenti";
+            this.lstStudenti.Size = new System.Drawing.Size(166, 134);
+            this.lstStudenti.TabIndex = 8;
+            this.lstStudenti.SelectedIndexChanged += new System.EventHandler(this.lstStudenti_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lstStudenti);
+            this.Controls.Add(this.btnPrikazi);
+            this.Controls.Add(this.btnSpremi);
+            this.Controls.Add(this.txtPrezime);
+            this.Controls.Add(this.txtIndeks);
+            this.Controls.Add(this.txtIme);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -139,12 +142,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox txtIme;
+        private System.Windows.Forms.TextBox txtIndeks;
+        private System.Windows.Forms.TextBox txtPrezime;
+        private System.Windows.Forms.Button btnSpremi;
+        private System.Windows.Forms.Button btnPrikazi;
+        private System.Windows.Forms.ListBox lstStudenti;
     }
 }
 
