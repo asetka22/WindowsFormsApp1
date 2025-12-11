@@ -138,6 +138,7 @@
             this.btnSpremi.TabIndex = 8;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
             // btnZatvori
             // 
@@ -147,6 +148,7 @@
             this.btnZatvori.TabIndex = 9;
             this.btnZatvori.Text = "Zatvori";
             this.btnZatvori.UseVisualStyleBackColor = true;
+            this.btnZatvori.Click += new System.EventHandler(this.btnZatvori_Click);
             // 
             // Form2
             // 

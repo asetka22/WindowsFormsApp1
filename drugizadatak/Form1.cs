@@ -16,5 +16,18 @@ namespace drugizadatak
         {
             InitializeComponent();
         }
+
+        private void unosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Form2 = new Form2();
+            Form2.Show();
+        }
+
+        private void prikazUčenikaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Form3 = new Form3();
+            Form3.Show();
+
+        }
     }
 }

@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.datotekaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pomoćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prikazUčenikaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomoćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,23 +56,25 @@
             this.datotekaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.datotekaToolStripMenuItem.Text = "Datoteka";
             // 
-            // pomoćToolStripMenuItem
-            // 
-            this.pomoćToolStripMenuItem.Name = "pomoćToolStripMenuItem";
-            this.pomoćToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.pomoćToolStripMenuItem.Text = "Pomoć";
-            // 
             // unosToolStripMenuItem
             // 
             this.unosToolStripMenuItem.Name = "unosToolStripMenuItem";
             this.unosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.unosToolStripMenuItem.Text = "Unos";
+            this.unosToolStripMenuItem.Click += new System.EventHandler(this.unosToolStripMenuItem_Click);
             // 
             // prikazUčenikaToolStripMenuItem
             // 
             this.prikazUčenikaToolStripMenuItem.Name = "prikazUčenikaToolStripMenuItem";
             this.prikazUčenikaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prikazUčenikaToolStripMenuItem.Text = "Prikaz učenika";
+            this.prikazUčenikaToolStripMenuItem.Click += new System.EventHandler(this.prikazUčenikaToolStripMenuItem_Click);
+            // 
+            // pomoćToolStripMenuItem
+            // 
+            this.pomoćToolStripMenuItem.Name = "pomoćToolStripMenuItem";
+            this.pomoćToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.pomoćToolStripMenuItem.Text = "Pomoć";
             // 
             // Form1
             // 

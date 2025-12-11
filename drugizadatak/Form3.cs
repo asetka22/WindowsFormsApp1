@@ -16,5 +16,16 @@ namespace drugizadatak
         {
             InitializeComponent();
         }
+
+        private void lbUcenici_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnZatvori_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }
